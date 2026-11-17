@@ -54,6 +54,8 @@ export class World {
     this.lastBreakdown = null;
     this.crashReason = '';
     this.loadLevel(0);
+    // First sight is the title screen; loadLevel leaves us in aim.
+    this.screen = Screens.TITLE;
   }
 
   // Bodies that pull the ship: the planets, the target and the sun, if there is one.

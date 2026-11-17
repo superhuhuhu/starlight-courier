@@ -22,7 +22,7 @@ export function runSelfTest() {
   try {
     // 1. A fresh world loads level 1 in the aim screen with 3 attempts.
     const w = new World(silentSound());
-    check('fresh world loads level 1 in aim', w.screen === Screens.AIM && w.levelIndex === 0, w.screen);
+    check('fresh world shows the title screen', w.screen === Screens.TITLE && w.levelIndex === 0, w.screen);
     check('attempts start at 3', w.attemptsLeft === 3, String(w.attemptsLeft));
     check('fuel starts at the level value', w.fuel === LEVELS[0].fuel, String(w.fuel));
 

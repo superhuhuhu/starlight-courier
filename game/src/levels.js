@@ -9,7 +9,7 @@ export const LEVELS = [
     hint: 'Drag to aim — release to launch. Land gently on the beacon planet.',
     ship: { x: 150, y: 560 },
     target: { x: 1120, y: 160, radius: 46, color: '#3fb8a6', name: 'Teal Harbor' },
-    planets: [{ x: 640, y: 380, radius: 52, mass: 1100, color: '#3fb8a6', ring: false }],
+    planets: [{ x: 620, y: 470, radius: 52, mass: 1100, color: '#3fb8a6', ring: false }],
     sun: null,
     comets: [],
     shards: [
